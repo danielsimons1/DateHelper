@@ -357,6 +357,8 @@ public extension Date {
         comp.hour = hour ?? comp.hour
         comp.minute = minute ?? comp.minute
         comp.second = second ?? comp.second
+        comp.timeZone = TimeZone.current
+        
         return Calendar.current.date(from: comp)!
     }
     
